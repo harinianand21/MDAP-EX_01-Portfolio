@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191516;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-repeat: repeat;
+    color: #FFD9DA;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #382E31;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    color: #FFD9DA;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #FFD9DA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #EB638B;
+}
+
+/* Home Section */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 30px;
+    min-height: 100vh;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #FFD9DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 217, 218, 0.5);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-card {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    min-height: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 217, 218, 0.3);
+}
+
+.dark-pink {
+    background-color: #AC274F;
+}
+
+.medium-pink {
+    background-color: #EB638B;
+}
+
+.light-pink {
+    background-color: #FFD9DA;
+    color: #191516;
+    grid-column: span 2;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 100px 30px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #382E31;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.fill {
+    height: 100%;
+    text-align: right;
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.python { width: 85%; background: #EB638B; }
+.c { width: 80%; background: #AC274F; }
+.html { width: 95%; background: #FFD9DA; color: #191516; }
+.css { width: 90%; background: #EB638B; }
+.js { width: 85%; background: #AC274F; }
+.react { width: 75%; background: #382E31; }
